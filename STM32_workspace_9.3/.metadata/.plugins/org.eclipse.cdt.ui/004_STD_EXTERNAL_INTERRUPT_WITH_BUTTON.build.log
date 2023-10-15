@@ -1,0 +1,10 @@
+16:13:03 **** Incremental Build of configuration Debug for project 004_STD_EXTERNAL_INTERRUPT_WITH_BUTTON ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c -mcpu=cortex-m4 -std=gnu11 -O0 -g -fstack-usage -Wall -o Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.o 
+..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c:84:28: fatal error: stm32f4xx_gpio.h: No such file or directory
+ #include "stm32f4xx_gpio.h"
+                            ^
+compilation terminated.
+
+16:13:03 Build Finished (took 172ms)
+

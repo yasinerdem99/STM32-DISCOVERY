@@ -1,0 +1,11 @@
+15:54:43 **** Incremental Build of configuration Debug for project 004_3_REGISTER_BUTTON_CONTROL ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\src\tiny_printf.c -mcpu=cortex-m4 -std=gnu11 -O0 -g -fstack-usage -Wall -o src\tiny_printf.o 
+arm-atollic-eabi-gcc -c ..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c -mcpu=cortex-m4 -std=gnu11 -O0 -g -fstack-usage -Wall -o Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.o 
+..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c:48:28: fatal error: stm32f4xx_cryp.h: No such file or directory
+ #include "stm32f4xx_cryp.h"
+                            ^
+compilation terminated.
+
+15:54:44 Build Finished (took 313ms)
+

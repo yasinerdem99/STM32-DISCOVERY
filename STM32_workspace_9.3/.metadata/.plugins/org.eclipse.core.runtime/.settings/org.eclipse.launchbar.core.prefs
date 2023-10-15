@@ -1,0 +1,12 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:005_STD_ADC.elf,org.eclipse.launchbar.core.descriptorType.default\:005_1_STD_ADC_BUTTON.elf
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:0.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:0.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:001_register_clock_configuration.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:001_register_clock_configuration.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:005_1_STD_ADC_BUTTON.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:005_1_STD_ADC_BUTTON.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:005_STD_ADC.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:005_STD_ADC.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

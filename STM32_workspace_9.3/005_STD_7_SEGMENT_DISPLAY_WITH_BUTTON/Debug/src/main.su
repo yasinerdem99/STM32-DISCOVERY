@@ -1,0 +1,5 @@
+main.c:9:6:Config	8	static
+main.c:33:6:delay	16	static
+main.c:37:5:main	8	static
+main.c:127:6:EVAL_AUDIO_TransferComplete_CallBack	16	static
+main.c:136:10:EVAL_AUDIO_GetSampleCallBack	4	static
