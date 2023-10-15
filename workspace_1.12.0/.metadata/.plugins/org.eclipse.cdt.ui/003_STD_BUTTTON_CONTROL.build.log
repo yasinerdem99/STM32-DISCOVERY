@@ -1,0 +1,26 @@
+13:01:13 **** Incremental Build of configuration Debug for project 003_STD_BUTTTON_CONTROL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'GPIO_Config':
+../Core/Src/main.c:50:2: warning: implicit declaration of function 'RCC_AHB1PeriphClockCmd' [-Wimplicit-function-declaration]
+   50 |  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA,ENABLE);
+      |  ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:50:25: error: 'RCC_AHB1Periph_GPIOA' undeclared (first use in this function)
+   50 |  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA,ENABLE);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:50:25: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:52:17: error: 'GPIO_InitTypeDef' has no member named 'GPIO_Pin'
+   52 |  GPIO_InitStruct.GPIO_Pin=GPIO_Pin_0;
+      |                 ^
+../Core/Src/main.c:52:27: error: 'GPIO_Pin_0' undeclared (first use in this function); did you mean 'GPIO_PIN_0'?
+   52 |  GPIO_InitStruct.GPIO_Pin=GPIO_Pin_0;
+      |                           ^~~~~~~~~~
+      |                           GPIO_PIN_0
+../Core/Src/main.c:53:17: error: 'GPIO_InitTypeDef' has no member named 'GPIO_Mode'
+   53 |  GPIO_InitStruct.GPIO_Mode=0x00;
+      |                 ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+13:01:13 Build Failed. 5 errors, 1 warnings. (took 406ms)
+

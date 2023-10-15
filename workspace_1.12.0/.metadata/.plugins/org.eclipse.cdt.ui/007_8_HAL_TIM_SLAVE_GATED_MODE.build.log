@@ -1,0 +1,18 @@
+14:08:31 **** Incremental Build of configuration Debug for project 007_8_HAL_TIM_SLAVE_GATED_MODE ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "007_8_HAL_TIM_SLAVE_GATED_MODE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\LENOVO\STM32CubeIDE\workspace_1.12.0\007_8_HAL_TIM_SLAVE_GATED_MODE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_8_HAL_TIM_SLAVE_GATED_MODE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 007_8_HAL_TIM_SLAVE_GATED_MODE.elf
+ 
+arm-none-eabi-size   007_8_HAL_TIM_SLAVE_GATED_MODE.elf 
+arm-none-eabi-objdump -h -S  007_8_HAL_TIM_SLAVE_GATED_MODE.elf  > "007_8_HAL_TIM_SLAVE_GATED_MODE.list"
+   text	   data	    bss	    dec	    hex	filename
+   8016	     20	   1644	   9680	   25d0	007_8_HAL_TIM_SLAVE_GATED_MODE.elf
+Finished building: default.size.stdout
+ 
+Finished building: 007_8_HAL_TIM_SLAVE_GATED_MODE.list
+ 
+
+14:08:34 Build Finished. 0 errors, 0 warnings. (took 3s.199ms)
+

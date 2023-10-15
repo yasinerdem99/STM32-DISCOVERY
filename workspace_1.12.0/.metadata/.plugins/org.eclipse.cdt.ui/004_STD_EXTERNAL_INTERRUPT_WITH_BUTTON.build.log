@@ -1,0 +1,16 @@
+15:58:00 **** Incremental Build of configuration Debug for project 004_STD_EXTERNAL_INTERRUPT_WITH_BUTTON ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:36:1: error: unknown type name 'EXTI_InitTypeDef'; did you mean 'DMA_InitTypeDef'?
+   36 | EXTI_InitTypeDef EXTI_InitStruct;
+      | ^~~~~~~~~~~~~~~~
+      | DMA_InitTypeDef
+../Core/Src/main.c:37:1: error: unknown type name 'NVIC_InitTypeDef'; did you mean 'GPIO_InitTypeDef'?
+   37 | NVIC_InitTypeDef NVIC_InitStruct;
+      | ^~~~~~~~~~~~~~~~
+      | GPIO_InitTypeDef
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+15:58:00 Build Failed. 3 errors, 0 warnings. (took 375ms)
+

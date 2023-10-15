@@ -1,0 +1,10 @@
+22:44:31 **** Incremental Build of configuration Debug for project 007_11_1_HAL_TIM_INPUT_CAPTURE_INTERRUPT ****
+make -j8 all 
+arm-none-eabi-size   007_11_1_HAL_TIM_INPUT_CAPTURE_INTERRUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9960	     20	   1652	  11632	   2d70	007_11_1_HAL_TIM_INPUT_CAPTURE_INTERRUPT.elf
+Finished building: default.size.stdout
+ 
+
+22:44:32 Build Finished. 0 errors, 0 warnings. (took 439ms)
+

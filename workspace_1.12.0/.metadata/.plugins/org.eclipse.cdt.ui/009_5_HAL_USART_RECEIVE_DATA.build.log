@@ -1,0 +1,26 @@
+13:57:01 **** Incremental Build of configuration Debug for project 009_5_HAL_USART_RECEIVE_DATA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:53: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |     HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer, sprintf(tx_buffer,"Birinci led yandi"),100);
+      |                                                     ^~~~~~~
+../Core/Src/main.c:112:53: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+arm-none-eabi-gcc -o "009_5_HAL_USART_RECEIVE_DATA.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\LENOVO\STM32CubeIDE\workspace_1.12.0\009_5_HAL_USART_RECEIVE_DATA\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009_5_HAL_USART_RECEIVE_DATA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 009_5_HAL_USART_RECEIVE_DATA.elf
+ 
+arm-none-eabi-size   009_5_HAL_USART_RECEIVE_DATA.elf 
+arm-none-eabi-objdump -h -S  009_5_HAL_USART_RECEIVE_DATA.elf  > "009_5_HAL_USART_RECEIVE_DATA.list"
+   text	   data	    bss	    dec	    hex	filename
+  11588	    120	   1760	  13468	   349c	009_5_HAL_USART_RECEIVE_DATA.elf
+Finished building: default.size.stdout
+ 
+Finished building: 009_5_HAL_USART_RECEIVE_DATA.list
+ 
+
+13:57:03 Build Finished. 0 errors, 2 warnings. (took 2s.113ms)
+
